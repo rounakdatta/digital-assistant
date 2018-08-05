@@ -1,0 +1,360 @@
+{
+  "rasa_nlu_data": {
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "whatis",
+        "text": "What is a goroutine?",
+        "entities": [
+          {
+            "end": 19,
+            "value": "goroutine",
+            "start": 10,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who is the president of Vietnam?",
+        "entities": [
+          {
+            "end": 31,
+            "value": "president of Vietnam",
+            "start": 11,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is love?",
+        "entities": [
+          {
+            "end": 12,
+            "value": "love",
+            "start": 8,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who are dinosaurs?",
+        "entities": [
+          {
+            "end": 17,
+            "value": "dinosaurs",
+            "start": 8,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is an eclipse?",
+        "entities": [
+          {
+            "end": 18,
+            "value": "eclipse",
+            "start": 11,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who is a christian?",
+        "entities": [
+          {
+            "end": 18,
+            "value": "christian",
+            "start": 9,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who is an engineer?",
+        "entities": [
+          {
+            "end": 18,
+            "value": "engineer",
+            "start": 10,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is the population of Vietnam?",
+        "entities": [
+          {
+            "end": 33,
+            "value": "population of Vietnam",
+            "start": 12,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you tell me something about Golang?",
+        "entities": [
+          {
+            "end": 38,
+            "value": "Golang",
+            "start": 32,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Do you know who is Riki?",
+        "entities": [
+          {
+            "end": 23,
+            "value": "Riki",
+            "start": 19,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Do you know what is OOP?",
+        "entities": [
+          {
+            "end": 23,
+            "value": "OOP",
+            "start": 20,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you give me the price of Bitcoin?",
+        "entities": [
+          {
+            "end": 36,
+            "value": "price of Bitcoin",
+            "start": 20,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you give me USD VND rate?",
+        "entities": [
+          {
+            "end": 28,
+            "value": "USD VND rate",
+            "start": 16,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is the meaning of life?",
+        "entities": [
+          {
+            "end": 27,
+            "value": "meaning of life",
+            "start": 12,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who is John Lennon?",
+        "entities": [
+          {
+            "end": 18,
+            "value": "John Lennon",
+            "start": 7,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is the biggest country in the world?",
+        "entities": [
+          {
+            "end": 40,
+            "value": "biggest country in the world",
+            "start": 12,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is the most expensive food in the world?",
+        "entities": [
+          {
+            "end": 44,
+            "value": "most expensive food in the world",
+            "start": 12,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "howto",
+        "text": "How to boil eggs?",
+        "entities": [
+          {
+            "end": 16,
+            "value": " boil eggs",
+            "start": 6,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "howto",
+        "text": "How to practice yoga?",
+        "entities": [
+          {
+            "end": 20,
+            "value": "practice yoga",
+            "start": 7,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "howto",
+        "text": "How to learn programming?",
+        "entities": [
+          {
+            "end": 24,
+            "value": "learn programming",
+            "start": 7,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "when",
+        "text": "When John Lennon died?",
+        "entities": [
+          {
+            "end": 21,
+            "value": "John Lennon died",
+            "start": 5,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "when",
+        "text": "When Second World War started?",
+        "entities": [
+          {
+            "end": 29,
+            "value": "Second World War started",
+            "start": 5,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you tell me what is the Universe?",
+        "entities": [
+          {
+            "end": 36,
+            "value": "Universe",
+            "start": 28,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you tell me who is Bismarck Lepe?",
+        "entities": [
+          {
+            "end": 36,
+            "value": "Bismarck Lepe",
+            "start": 23,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do plants die of old age?",
+        "entities": [
+          {
+            "end": 24,
+            "value": "plants die of old age",
+            "start": 3,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Does chewing gum really stay inside you for years?",
+        "entities": [
+          {
+            "end": 49,
+            "value": "chewing gum really stay inside you for years",
+            "start": 5,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Do you know what is goroutine?",
+        "entities": [
+          {
+            "end": 29,
+            "value": "goroutine",
+            "start": 20,
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you tell me what is goroutine?",
+        "entities": [
+          {
+            "end": 33,
+            "value": "goroutine",
+            "start": 24,
+            "entity": "query"
+          }
+        ]
+      }
+    ],
+    "regex_features": []
+  }
+}
