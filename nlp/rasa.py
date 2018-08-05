@@ -16,8 +16,12 @@ class RasaNLP(object):
 	]
 	GREET_MSGS = ["Hola! Welcome to shopify.", "Hey! Welcome to shopify.", "Bonjour! Welcome to shopify."]
 	PRODUCT_MSGS = ["Shopify has all kinds of products you need - ranging from electronics, household items, vegetables, health prodcuts, etc. Happy shopping!"]
+	SHOP_MSGS=["Shopify is open everyday from 10:00 a.m to 8 p.m. See you there!"]
+	BOT_MSGS=["I'm Shoppify's bot. Always at your service. Ask me anything you need."]
 	INTENT_GREET = "greet"
-	INTENT_PRODUCT = "prodcuts"
+	INTENT_PRODUCT = "products"
+	INTENT_SHOP="shop"
+	INTENT_BOT="bot"
 	INTENTS_QUESTION = ["whatis", "howto", "when", "do","who","where","which"]
 	ENTITY_QUERY = "query"
 
@@ -58,6 +62,12 @@ class RasaNLP(object):
 
 		if res["intent"]["name"] == self.INTENT_PRODUCT:
 			return random.choice(self.PRODUCT_MSGS)
+
+		if res["intent"]["name"] == self.INTENT_SHOP:
+			return random.choice(self.SHOP_MSGS)
+
+		if res["intent"]["name"] == self.INTENT_BOT:
+			return random.choice(self.BOT_MSGS)
 
 		# same approach for all questions
 		if res["intent"]["name"] in self.INTENTS_QUESTION and len(res["entities"]) > 0:
