@@ -2,6 +2,26 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "text": "What products can I buy?",
+        "intent": "products",
+        "entities": []
+      },
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
         "text": "hey",
         "intent": "greet",
         "entities": []
