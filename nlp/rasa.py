@@ -14,9 +14,11 @@ class RasaNLP(object):
 		"Sorry, can't get what do you mean",
 		"Try something else"
 	]
-	GREET_MSGS = ["Hola!", "Privet!", "Xin chào!"]
+	GREET_MSGS = ["Hola! Welcome to shopify.", "Hey! Welcome to shopify.", "Bonjour! Welcome to shopify."]
+	PRODUCT_MSGS = ["Shopify has all kinds of products you need - ranging from electronics, household items, vegetables, health prodcuts, etc. Happy shopping!"]
 	INTENT_GREET = "greet"
-	INTENTS_QUESTION = ["whatis", "howto", "when", "do"]
+	INTENT_PRODUCT = "prodcuts"
+	INTENTS_QUESTION = ["whatis", "howto", "when", "do","who","where","which"]
 	ENTITY_QUERY = "query"
 
 	def __init__(self, data_provider, config_file, data_file, model_dir):
@@ -53,6 +55,9 @@ class RasaNLP(object):
 
 		if res["intent"]["name"] == self.INTENT_GREET:
 			return random.choice(self.GREET_MSGS)
+
+		if res["intent"]["name"] == self.INTENT_PRODUCT:
+			return random.choice(self.PRODUCT_MSGS)
 
 		# same approach for all questions
 		if res["intent"]["name"] in self.INTENTS_QUESTION and len(res["entities"]) > 0:
