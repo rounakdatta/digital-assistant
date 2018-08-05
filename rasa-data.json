@@ -7,6 +7,56 @@
         "entities": []
       },
       {
+        "text": "What products are avaiable?",
+        "intent": "products",
+        "entities": []
+      },
+      {
+        "text": "What can I buy?",
+        "intent": "products",
+        "entities": []
+      },
+      {
+        "text": "What is avaible for purchase?",
+        "intent": "products",
+        "entities": []
+      },
+      {
+        "text": "What products do you have?",
+        "intent": "products",
+        "entities": []
+      },
+      {
+        "text": "When is the shop open?",
+        "intent": "shop",
+        "entities": []
+      },
+      {
+        "text": "What is the shop timing?",
+        "intent": "shop",
+        "entities": []
+      },
+      {
+        "text": "When are you open?",
+        "intent": "shop",
+        "entities": []
+      },
+      {
+        "text": "When does the shop close?",
+        "intent": "shop",
+        "entities": []
+      },
+      {
+        "text": "Who are you?",
+        "intent": "bot",
+        "entities": []
+      },
+      {
+        "text": "Are you a bot?",
+        "intent": "bot",
+        "entities": []
+      },
+      {
         "text": "hey",
         "intent": "greet",
         "entities": []
