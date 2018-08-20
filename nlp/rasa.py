@@ -1,11 +1,28 @@
-# Copyright (c) 2017 Alex Pliutau
-
 import random
+import time
 import logging
 from rasa_nlu.training_data import load_data
 from rasa_nlu import config
 from rasa_nlu.model import Trainer, Metadata, Interpreter
 from rasa_nlu.components import ComponentBuilder
+
+def getTime():
+	timeVar = time.localtime()
+	if((timeVar[3]) <= 10):
+		timeOfTheDay = "Good Morning!"
+	elif((timeVar[3]) > 10 and (timeVar[3]) <= 13):
+		timeOfTheDay = "Have a great Day!"
+	elif((timeVar[3]) > 13 and (timeVar[3]) <= 17):
+		timeOfTheDay = "Good Afternoon!"
+	elif((timeVar[3]) > 17):
+		timeOfTheDay = "Good Evening!"
+	else:
+		timeOfTheDay = "Thank you!"
+	return "It's " + str(timeVar[3]) + "H " + str(timeVar[4]) + "M " + str(timeVar[5]) + "S now. " + timeOfTheDay
+
+def getDate():
+	timeVar = time.localtime()
+	return "Today's " + str(timeVar[2]) + "-" + str(timeVar[1]) + "-" + str(timeVar[0]) + "!"
 
 class RasaNLP(object):
 	COULD_NOT_PARSE_MSGS = [
@@ -14,15 +31,20 @@ class RasaNLP(object):
 		"Sorry, can't get what do you mean",
 		"Try something else"
 	]
-	GREET_MSGS = ["Hola! Welcome to shopify.", "Hey! Welcome to shopify.", "Bonjour! Welcome to shopify."]
-	PRODUCT_MSGS = ["Shopify has all kinds of products you need - ranging from electronics, household items, vegetables, health prodcuts, etc. Happy shopping!"]
-	SHOP_MSGS=["Shopify is open everyday from 10:00 a.m to 8 p.m. See you there!"]
-	BOT_MSGS=["I'm Shoppify's bot. Always at your service. Ask me anything you need."]
+	GREET_MSGS = ["Hi, I'm a bot and here to assist you get your service. Tell me your needs?", "Welcome, how can I help you? Do you need something, have ideas to enquire?", "Hey, nice to see you here! I'm an automated service here to help you deliver services. So, how can I be useful to you?"]
+	PRODUCT_MSGS = ["I can help you choose from a variety of brands/choices based on the product you want. So what's your pick?", "I'm a bot but can help you get the perfect product of your choice. We have a wide variety available, lets finds out the best of what you want!"]
+	SHOP_MSGS = ["Well, I never sleep and am always ready to your service, go forward and demand something!", "We are 24x7 online and I'll be always there to assist you!", "Unlike a brick-and-mortar store, we'll always be available round-the-clock to help you, accept orders and address grievances!"]
+	BOT_MSGS = ["It's the Bot - always speaking and never sleepy!", "I'm the store's Bot at your service! 🙏", "I'm your friend, philosopher and guide!"]
+	TIME_MSGS = [getTime()]
+	DATE_MSGS = [getDate()]
+
 	INTENT_GREET = "greet"
 	INTENT_PRODUCT = "products"
-	INTENT_SHOP="shop"
-	INTENT_BOT="bot"
-	INTENTS_QUESTION = ["whatis", "howto", "when", "do","who","where","which"]
+	INTENT_SHOP = "shop"
+	INTENT_BOT = "bot"
+	INTENT_TIME = "time"
+	INTENT_DATE = "date"
+	INTENTS_QUESTION = ["is", "can", "whatis", "what", "how", "whats", "howto", "when", "do", "who", "where", "which"]
 	ENTITY_QUERY = "query"
 
 	def __init__(self, data_provider, config_file, data_file, model_dir):
@@ -68,6 +90,12 @@ class RasaNLP(object):
 
 		if res["intent"]["name"] == self.INTENT_BOT:
 			return random.choice(self.BOT_MSGS)
+
+		if res["intent"]["name"] == self.INTENT_TIME:
+			return random.choice(self.TIME_MSGS)
+
+		if res["intent"]["name"] == self.INTENT_DATE:
+			return random.choice(self.DATE_MSGS)
 
 		# same approach for all questions
 		if res["intent"]["name"] in self.INTENTS_QUESTION and len(res["entities"]) > 0:

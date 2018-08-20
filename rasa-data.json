@@ -7,7 +7,7 @@
         "entities": []
       },
       {
-        "text": "What products are avaiable?",
+        "text": "What products are available?",
         "intent": "products",
         "entities": []
       },
@@ -17,7 +17,7 @@
         "entities": []
       },
       {
-        "text": "What is avaible for purchase?",
+        "text": "What is available for purchase?",
         "intent": "products",
         "entities": []
       },
@@ -54,6 +54,31 @@
       {
         "text": "Are you a bot?",
         "intent": "bot",
+        "entities": []
+      },
+      {
+        "text": "What is the time now?",
+        "intent": "time",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me the time?",
+        "intent": "time",
+        "entities": []
+      },
+      {
+        "text": "What is the date today?",
+        "intent": "date",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me the date today?",
+        "intent": "date",
+        "entities": []
+      },
+      {
+        "text": "Do you know today's date?",
+        "intent": "date",
         "entities": []
       },
       {
@@ -423,6 +448,54 @@
             "start": 24,
             "end": 33,
             "value": "goroutine",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "Is iphone 6 available?",
+        "intent": "is",
+        "entities": [
+          {
+            "start": 3,
+            "end": 11,
+            "value": "iphone 6",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "Do you have iphone 6?",
+        "intent": "do",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "iphone 6",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "Do you have iphone 6 in stock?",
+        "intent": "do",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "iphone 6",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "Can you show me iphone 6?",
+        "intent": "can",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "iphone 6",
             "entity": "query"
           }
         ]

@@ -3,24 +3,28 @@
     "entity_synonyms": [],
     "common_examples": [
       {
+        "text": "hey",
         "intent": "greet",
-        "text": "hey"
+        "entities": []
       },
       {
+        "text": "howdy",
         "intent": "greet",
-        "text": "howdy"
+        "entities": []
       },
       {
+        "text": "hello",
         "intent": "greet",
-        "text": "hello"
+        "entities": []
       },
       {
+        "text": "hi",
         "intent": "greet",
-        "text": "hi"
+        "entities": []
       },
       {
-        "intent": "whatis",
         "text": "What is a goroutine?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 10,
@@ -31,8 +35,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Who is the president of Vietnam?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 11,
@@ -43,8 +47,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "What is love?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 8,
@@ -55,8 +59,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Who are dinosaurs?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 8,
@@ -67,8 +71,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "What is an eclipse?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 11,
@@ -79,8 +83,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Who is a christian?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 9,
@@ -91,8 +95,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Who is an engineer?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 10,
@@ -103,8 +107,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "What is the population of Vietnam?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 12,
@@ -115,8 +119,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Can you tell me something about Golang?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 32,
@@ -127,8 +131,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Do you know who is Riki?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 19,
@@ -139,8 +143,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Do you know what is OOP?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 20,
@@ -151,8 +155,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Can you give me the price of Bitcoin?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 20,
@@ -163,8 +167,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Can you give me USD VND rate?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 16,
@@ -175,8 +179,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "What is the meaning of life?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 12,
@@ -187,8 +191,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Who is John Lennon?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 7,
@@ -199,8 +203,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "What is the biggest country in the world?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 12,
@@ -211,8 +215,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "What is the most expensive food in the world?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 12,
@@ -223,8 +227,8 @@
         ]
       },
       {
-        "intent": "howto",
         "text": "How to boil eggs?",
+        "intent": "howto",
         "entities": [
           {
             "start": 6,
@@ -235,8 +239,8 @@
         ]
       },
       {
-        "intent": "howto",
         "text": "How to practice yoga?",
+        "intent": "howto",
         "entities": [
           {
             "start": 7,
@@ -247,8 +251,8 @@
         ]
       },
       {
-        "intent": "howto",
         "text": "How to learn programming?",
+        "intent": "howto",
         "entities": [
           {
             "start": 7,
@@ -259,8 +263,8 @@
         ]
       },
       {
-        "intent": "when",
         "text": "When John Lennon died?",
+        "intent": "when",
         "entities": [
           {
             "start": 5,
@@ -271,8 +275,8 @@
         ]
       },
       {
-        "intent": "when",
         "text": "When Second World War started?",
+        "intent": "when",
         "entities": [
           {
             "start": 5,
@@ -283,8 +287,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Can you tell me what is the Universe?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 28,
@@ -295,8 +299,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Can you tell me who is Bismarck Lepe?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 23,
@@ -307,8 +311,8 @@
         ]
       },
       {
-        "intent": "do",
         "text": "Do plants die of old age?",
+        "intent": "do",
         "entities": [
           {
             "start": 3,
@@ -319,8 +323,8 @@
         ]
       },
       {
-        "intent": "do",
         "text": "Does chewing gum really stay inside you for years?",
+        "intent": "do",
         "entities": [
           {
             "start": 5,
@@ -331,8 +335,8 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Do you know what is goroutine?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 20,
@@ -343,14 +347,62 @@
         ]
       },
       {
-        "intent": "whatis",
         "text": "Can you tell me what is goroutine?",
+        "intent": "whatis",
         "entities": [
           {
             "start": 24,
             "value": "goroutine",
             "entity": "query",
             "end": 33
+          }
+        ]
+      },
+      {
+        "text": "Is iphone 6 available?",
+        "intent": "is",
+        "entities": [
+          {
+            "start": 3,
+            "end": 11,
+            "value": "iphone 6",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "Do you have iphone 6?",
+        "intent": "do",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "iphone 6",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "Do you have iphone 6 in stock?",
+        "intent": "do",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "iphone 6",
+            "entity": "query"
+          }
+        ]
+      },
+      {
+        "text": "Can you show me iphone 6?",
+        "intent": "can",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "iphone 6",
+            "entity": "query"
           }
         ]
       }

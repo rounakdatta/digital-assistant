@@ -1,5 +1,3 @@
-# Copyright (c) 2017 Alex Pliutau
-
 import os
 import sys
 import traceback
