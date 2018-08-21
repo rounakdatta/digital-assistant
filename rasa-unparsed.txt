@@ -16,3 +16,12 @@ what is redmi note 5?
 do you have iphone
 do you have iphone?
 do you have redmi note?
+do you have redmi note?
+do you have mi a1?
+not sure why this query doesn't work .. there's 'xiaomi redmi' within tags
+do you have xiaomi?
+whats the time now
+whats the time?
+what is the time now?
+who are you?
+are you a real bot?

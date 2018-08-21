@@ -3,8 +3,22 @@ import wikipedia
 import logging
 import pymongo
 
+def form_sentence(words_bucket):
+	if words_bucket.count() == 1:
+		return ""
+
+	add_sentences = " Also available "
+	if words_bucket.count() > 2:
+		add_sentences += "are "
+		for word_i in range(1, words_bucket.count() - 1):
+			add_sentences += words_bucket[word_i]['item'] + ", "
+		add_sentences = add_sentences[:-2] + " and " + words_bucket[words_bucket.count() - 1]['item'] + "."
+		return add_sentences
+	else:
+		add_sentences += "is " + words_bucket[1]['item'] + "."
+
 class DataProvider(object):
-	NOT_FOUND_MSG = "Sorry, I don't know this yet"
+	NOT_FOUND_MSG = "Oops, Oops, Oops! I tried my best! 😢"
 
 	def __init__(self, app_id):
 		logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
@@ -25,8 +39,8 @@ class DataProvider(object):
 		try:
 			avq = self.shopData.find({"tags": str(query)})
 
-			if(avq != 0):
-				return str(avq[0]['item']) + " found! " + str(avq[0]['availableQuantity']) + " units available."
+			if(avq.count() != 0):
+				return str(avq[0]['item']) + " found! " + str(avq[0]['availableQuantity']) + " units available." + form_sentence(avq)
 			else:
 				return "Sorry, product isn't currently available."
 		except Exception as e:
