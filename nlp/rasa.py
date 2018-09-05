@@ -25,6 +25,7 @@ def getDate():
 	return "Today's " + str(timeVar[2]) + "-" + str(timeVar[1]) + "-" + str(timeVar[0]) + "!"
 
 class RasaNLP(object):
+
 	COULD_NOT_PARSE_MSGS = [
 		"Sorry, I don't know it",
 		"Next time I will know, but not now",
@@ -45,6 +46,7 @@ class RasaNLP(object):
 	INTENT_TIME = "time"
 	INTENT_DATE = "date"
 	INTENTS_QUESTION = ["is", "can", "whatis", "what", "how", "whats", "howto", "when", "do", "who", "where", "which"]
+	INTENTS_ASK = "askq"
 	ENTITY_QUERY = "query"
 
 	def __init__(self, data_provider, config_file, data_file, model_dir):
@@ -97,8 +99,15 @@ class RasaNLP(object):
 		if res["intent"]["name"] == self.INTENT_DATE:
 			return random.choice(self.DATE_MSGS)
 
+		if res["intent"]["name"] == self.INTENTS_ASK:
+			print(res["entities"])
+			return "No!"
+
+		# print(res["intent"]["name"])
+		# print(res["entities"])
 		# same approach for all questions
-		if res["intent"]["name"] in self.INTENTS_QUESTION and len(res["entities"]) > 0:
+		if res["intent"]["name"] in self.INTENTS_QUESTION:
+			print(res["entities"])
 			for e in res["entities"]:
 				if e["entity"] == self.ENTITY_QUERY:
 					return self.get_short_answer(e["value"])

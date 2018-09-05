@@ -1,0 +1,86 @@
+{
+    "language": "en",
+    "training_data": "training_data.json",
+    "pipeline": [
+        {
+            "name": "nlp_spacy",
+            "class": "rasa_nlu.utils.spacy_utils.SpacyNLP",
+            "model": "en",
+            "case_sensitive": false
+        },
+        {
+            "name": "tokenizer_spacy",
+            "class": "rasa_nlu.tokenizers.spacy_tokenizer.SpacyTokenizer"
+        },
+        {
+            "name": "intent_featurizer_spacy",
+            "class": "rasa_nlu.featurizers.spacy_featurizer.SpacyFeaturizer"
+        },
+        {
+            "name": "intent_entity_featurizer_regex",
+            "class": "rasa_nlu.featurizers.regex_featurizer.RegexFeaturizer",
+            "regex_file": "regex_featurizer.json"
+        },
+        {
+            "max_iterations": 50,
+            "BILOU_flag": true,
+            "name": "ner_crf",
+            "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor",
+            "L2_c": 0.001,
+            "L1_c": 1,
+            "classifier_file": "crf_model.pkl",
+            "features": [
+                [
+                    "low",
+                    "title",
+                    "upper",
+                    "pos",
+                    "pos2"
+                ],
+                [
+                    "bias",
+                    "low",
+                    "word3",
+                    "word2",
+                    "upper",
+                    "title",
+                    "digit",
+                    "pos",
+                    "pos2",
+                    "pattern"
+                ],
+                [
+                    "low",
+                    "title",
+                    "upper",
+                    "pos",
+                    "pos2"
+                ]
+            ]
+        },
+        {
+            "name": "ner_synonyms",
+            "synonyms_file": "entity_synonyms.json",
+            "class": "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper"
+        },
+        {
+            "kernels": [
+                "linear"
+            ],
+            "C": [
+                1,
+                2,
+                5,
+                10,
+                20,
+                100
+            ],
+            "name": "intent_classifier_sklearn",
+            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier",
+            "classifier_file": "intent_classifier_sklearn.pkl",
+            "max_cross_validation_folds": 5
+        }
+    ],
+    "trained_at": "20180905-232125",
+    "rasa_nlu_version": "0.12.0"
+}

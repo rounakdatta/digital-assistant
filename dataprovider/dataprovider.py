@@ -42,7 +42,7 @@ class DataProvider(object):
 			if(avq.count() != 0):
 				return str(avq[0]['item']) + " found! " + str(avq[0]['availableQuantity']) + " units available." + form_sentence(avq)
 			else:
-				return "Sorry, product isn't currently available."
+				print("Sorry, product isn't currently available.")
 		except Exception as e:
 			print(e)
 			print('Not found in MongoDB')
