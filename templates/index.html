@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Assistant</title>
+</head>
+<body>
+
+<h1>Digital Assistant</h1>
+<h2>Chat with me</h2>
+
+<input type="text" id="chatInput" name="chatInput">
+<button onclick="chatResponse()" id="submitButton" name="submitButton">Send</button>
+
+<br><br><button onclick="clearMessages()">Clear Messages</button>
+
+<div id="messages" name="messages"></div>
+
+<script type="text/javascript">
+
+function processText(payload) {
+
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	       // Typical action to be performed when the document is ready:
+	       document.getElementById('messages').innerHTML += xhttp.responseText;
+	       // return xhttp.responseText;
+	    }
+	};
+	xhttp.open("POST", "http://localhost:5000/process", true);
+	xhttp.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+	xhttp.send('chatInput=' + payload);
+
+}
+	
+function chatResponse() {
+	document.getElementById('messages').innerHTML += '<br><hr><br>Me : ' + document.getElementById('chatInput').value + '<br>' + 'Bot : ';
+	processText(document.getElementById('chatInput').value)
+}
+
+function clearMessages() {
+	document.getElementById('messages').innerHTML = '';
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,796 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "intent": "askq",
+        "text": "Will you tell me the price of dell inspiron?",
+        "entities": [
+          {
+            "entity": "attribute",
+            "end": 26,
+            "start": 21,
+            "value": "price"
+          },
+          {
+            "entity": "product",
+            "end": 43,
+            "start": 30,
+            "value": "dell inspiron"
+          }
+        ]
+      },
+      {
+        "intent": "askq",
+        "text": "Will you tell me the cost of Macbook Pro?",
+        "entities": [
+          {
+            "entity": "attribute",
+            "end": 25,
+            "start": 21,
+            "value": "cost"
+          },
+          {
+            "entity": "product",
+            "end": 40,
+            "start": 29,
+            "value": "Macbook Pro"
+          }
+        ]
+      },
+      {
+        "intent": "products",
+        "text": "What products can I buy?"
+      },
+      {
+        "intent": "products",
+        "text": "What products are available?"
+      },
+      {
+        "intent": "products",
+        "text": "What can I buy?"
+      },
+      {
+        "intent": "products",
+        "text": "What is available for purchase?"
+      },
+      {
+        "intent": "products",
+        "text": "What products do you have?"
+      },
+      {
+        "intent": "shop",
+        "text": "When is the shop open?"
+      },
+      {
+        "intent": "shop",
+        "text": "What is the shop timing?"
+      },
+      {
+        "intent": "shop",
+        "text": "When are you open?"
+      },
+      {
+        "intent": "shop",
+        "text": "When does the shop close?"
+      },
+      {
+        "intent": "bot",
+        "text": "Who are you?"
+      },
+      {
+        "intent": "bot",
+        "text": "Are you a bot?"
+      },
+      {
+        "intent": "time",
+        "text": "What is the time now?"
+      },
+      {
+        "intent": "time",
+        "text": "Can you tell me the time?"
+      },
+      {
+        "intent": "date",
+        "text": "What is the date today?"
+      },
+      {
+        "intent": "date",
+        "text": "Can you tell me the date today?"
+      },
+      {
+        "intent": "date",
+        "text": "Do you know today's date?"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "whatis",
+        "text": "What is a goroutine?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 19,
+            "start": 10,
+            "value": "goroutine"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who is the president of Vietnam?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 31,
+            "start": 11,
+            "value": "president of Vietnam"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is love?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 12,
+            "start": 8,
+            "value": "love"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who are dinosaurs?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 17,
+            "start": 8,
+            "value": "dinosaurs"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is an eclipse?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 18,
+            "start": 11,
+            "value": "eclipse"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who is a christian?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 18,
+            "start": 9,
+            "value": "christian"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who is an engineer?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 18,
+            "start": 10,
+            "value": "engineer"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is the population of Vietnam?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 33,
+            "start": 12,
+            "value": "population of Vietnam"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you tell me something about Golang?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 38,
+            "start": 32,
+            "value": "Golang"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Do you know who is Riki?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 23,
+            "start": 19,
+            "value": "Riki"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Do you know what is OOP?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 23,
+            "start": 20,
+            "value": "OOP"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you give me the price of Bitcoin?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 36,
+            "start": 20,
+            "value": "price of Bitcoin"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you give me USD VND rate?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 28,
+            "start": 16,
+            "value": "USD VND rate"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is the meaning of life?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 27,
+            "start": 12,
+            "value": "meaning of life"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Who is John Lennon?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 18,
+            "start": 7,
+            "value": "John Lennon"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is the biggest country in the world?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 40,
+            "start": 12,
+            "value": "biggest country in the world"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "What is the most expensive food in the world?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 44,
+            "start": 12,
+            "value": "most expensive food in the world"
+          }
+        ]
+      },
+      {
+        "intent": "howto",
+        "text": "How to boil eggs?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 16,
+            "start": 6,
+            "value": " boil eggs"
+          }
+        ]
+      },
+      {
+        "intent": "howto",
+        "text": "How to practice yoga?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 20,
+            "start": 7,
+            "value": "practice yoga"
+          }
+        ]
+      },
+      {
+        "intent": "howto",
+        "text": "How to learn programming?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 24,
+            "start": 7,
+            "value": "learn programming"
+          }
+        ]
+      },
+      {
+        "intent": "when",
+        "text": "When John Lennon died?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 21,
+            "start": 5,
+            "value": "John Lennon died"
+          }
+        ]
+      },
+      {
+        "intent": "when",
+        "text": "When Second World War started?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 29,
+            "start": 5,
+            "value": "Second World War started"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you tell me what is the Universe?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 36,
+            "start": 28,
+            "value": "Universe"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you tell me who is Bismarck Lepe?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 36,
+            "start": 23,
+            "value": "Bismarck Lepe"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do plants die of old age?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 24,
+            "start": 3,
+            "value": "plants die of old age"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Does chewing gum really stay inside you for years?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 49,
+            "start": 5,
+            "value": "chewing gum really stay inside you for years"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Do you know what is goroutine?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 29,
+            "start": 20,
+            "value": "goroutine"
+          }
+        ]
+      },
+      {
+        "intent": "whatis",
+        "text": "Can you tell me what is goroutine?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 33,
+            "start": 24,
+            "value": "goroutine"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is iphone 6 available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 11,
+            "start": 3,
+            "value": "iphone 6"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is honor 6x available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 11,
+            "start": 3,
+            "value": "honor 6x"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have iphone 6?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 20,
+            "start": 12,
+            "value": "iphone 6"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have samsung galaxy note 5?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 33,
+            "start": 12,
+            "value": "samsung galaxy note 5"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have xiaomi redmi in stock?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 24,
+            "start": 12,
+            "value": "xiaomi redmi"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you show me iphone 6?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 24,
+            "start": 16,
+            "value": "iphone 6"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you show me latest mobiles?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 30,
+            "start": 16,
+            "value": "mobiles"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have apple iphone in stock?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 24,
+            "start": 12,
+            "value": "apple iphone"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have iphone?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 18,
+            "start": 12,
+            "value": "iphone"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have samsung?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 19,
+            "start": 12,
+            "value": "samsung"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is Honor 6x available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 11,
+            "start": 3,
+            "value": "Honor 6x"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is Macbook Pro available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 14,
+            "start": 3,
+            "value": "Macbook Pro"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is Nvidia 1050 Ti available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 17,
+            "start": 3,
+            "value": "Nvidia 1050 Ti"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is phone charger available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 16,
+            "start": 3,
+            "value": "phone charger"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is washing machine available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 18,
+            "start": 3,
+            "value": "washing machine"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is Lenovo laptop available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 16,
+            "start": 3,
+            "value": "Lenovo laptop"
+          }
+        ]
+      },
+      {
+        "intent": "is",
+        "text": "Is Raspberry Pi in stock?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 15,
+            "start": 3,
+            "value": "Raspberry Pi"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you show me arduino?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 23,
+            "start": 16,
+            "value": "arduino"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you show me slippers for women?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 34,
+            "start": 16,
+            "value": "slippers for women"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you say if adidas shoes are available?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 27,
+            "start": 15,
+            "value": "adidas shoes"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you show me micromax mobiles?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 32,
+            "start": 16,
+            "value": "micromax mobiles"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have Oppo Find X in stock?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 23,
+            "start": 12,
+            "value": "Oppo Find X"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have Introduction to algorithms Cormen?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 45,
+            "start": 12,
+            "value": "Introduction to algorithms Cormen"
+          }
+        ]
+      },
+      {
+        "intent": "do",
+        "text": "Do you have Barcelona jerseys?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 29,
+            "start": 12,
+            "value": "Barcelona jerseys"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you show me Honor 9x?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 24,
+            "start": 16,
+            "value": "Honor 9x"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you show redmi note 3?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 25,
+            "start": 13,
+            "value": "redmi note 3"
+          }
+        ]
+      },
+      {
+        "intent": "can",
+        "text": "Can you show Amazon Echo?",
+        "entities": [
+          {
+            "entity": "query",
+            "end": 24,
+            "start": 13,
+            "value": "Amazon Echo"
+          }
+        ]
+      }
+    ]
+  }
+}

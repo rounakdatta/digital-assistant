@@ -1,5 +1,7 @@
 {
   "rasa_nlu_data": {
+    "entity_synonyms": [],
+    "regex_features": [],
     "common_examples": [
       {
         "text": "Will you tell me the price of dell inspiron?",
@@ -7,15 +9,15 @@
         "entities": [
           {
             "start": 21,
-            "entity": "attribute",
+            "end": 26,
             "value": "price",
-            "end": 26
+            "entity": "attribute"
           },
           {
             "start": 30,
-            "entity": "product",
+            "end": 43,
             "value": "dell inspiron",
-            "end": 43
+            "entity": "product"
           }
         ]
       },
@@ -25,132 +27,109 @@
         "entities": [
           {
             "start": 21,
-            "entity": "attribute",
+            "end": 25,
             "value": "cost",
-            "end": 25
+            "entity": "attribute"
           },
           {
             "start": 29,
-            "entity": "product",
+            "end": 40,
             "value": "Macbook Pro",
-            "end": 40
+            "entity": "product"
           }
         ]
       },
       {
         "text": "What products can I buy?",
-        "intent": "products",
-        "entities": []
+        "intent": "products"
       },
       {
         "text": "What products are available?",
-        "intent": "products",
-        "entities": []
+        "intent": "products"
       },
       {
         "text": "What can I buy?",
-        "intent": "products",
-        "entities": []
+        "intent": "products"
       },
       {
         "text": "What is available for purchase?",
-        "intent": "products",
-        "entities": []
+        "intent": "products"
       },
       {
         "text": "What products do you have?",
-        "intent": "products",
-        "entities": []
+        "intent": "products"
       },
       {
         "text": "When is the shop open?",
-        "intent": "shop",
-        "entities": []
+        "intent": "shop"
       },
       {
         "text": "What is the shop timing?",
-        "intent": "shop",
-        "entities": []
+        "intent": "shop"
       },
       {
         "text": "When are you open?",
-        "intent": "shop",
-        "entities": []
+        "intent": "shop"
       },
       {
         "text": "When does the shop close?",
-        "intent": "shop",
-        "entities": []
+        "intent": "shop"
       },
       {
         "text": "Who are you?",
-        "intent": "bot",
-        "entities": []
+        "intent": "bot"
       },
       {
         "text": "Are you a bot?",
-        "intent": "bot",
-        "entities": []
+        "intent": "bot"
       },
       {
         "text": "What is the time now?",
-        "intent": "time",
-        "entities": []
+        "intent": "time"
       },
       {
         "text": "Can you tell me the time?",
-        "intent": "time",
-        "entities": []
+        "intent": "time"
       },
       {
         "text": "What is the date today?",
-        "intent": "date",
-        "entities": []
+        "intent": "date"
       },
       {
         "text": "Can you tell me the date today?",
-        "intent": "date",
-        "entities": []
+        "intent": "date"
       },
       {
         "text": "Do you know today's date?",
-        "intent": "date",
-        "entities": []
+        "intent": "date"
       },
       {
         "text": "hey",
-        "intent": "greet",
-        "entities": []
+        "intent": "greet"
       },
       {
         "text": "hey",
-        "intent": "greet",
-        "entities": []
+        "intent": "greet"
       },
       {
         "text": "hey",
-        "intent": "greet",
-        "entities": []
+        "intent": "greet"
       },
       {
         "text": "hey",
-        "intent": "greet",
-        "entities": []
+        "intent": "greet"
       },
       {
         "text": "howdy",
-        "intent": "greet",
-        "entities": []
+        "intent": "greet"
       },
       {
         "text": "hello",
-        "intent": "greet",
-        "entities": []
+        "intent": "greet"
       },
       {
         "text": "hi",
-        "intent": "greet",
-        "entities": []
+        "intent": "greet"
       },
       {
         "text": "What is a goroutine?",
@@ -494,9 +473,9 @@
         "entities": [
           {
             "start": 3,
-            "entity": "query",
+            "end": 11,
             "value": "iphone 6",
-            "end": 11
+            "entity": "query"
           }
         ]
       },
@@ -506,9 +485,9 @@
         "entities": [
           {
             "start": 3,
-            "entity": "query",
+            "end": 11,
             "value": "honor 6x",
-            "end": 11
+            "entity": "query"
           }
         ]
       },
@@ -518,9 +497,9 @@
         "entities": [
           {
             "start": 12,
-            "entity": "query",
+            "end": 20,
             "value": "iphone 6",
-            "end": 20
+            "entity": "query"
           }
         ]
       },
@@ -554,9 +533,9 @@
         "entities": [
           {
             "start": 16,
-            "entity": "query",
+            "end": 24,
             "value": "iphone 6",
-            "end": 24
+            "entity": "query"
           }
         ]
       },

@@ -15,7 +15,22 @@ def process_msg(data, rasa_nlu):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-	return 'It works'
+	return render_template('index.html')
+
+
+@app.route('/process', methods=['GET', 'POST'])
+def process():
+	if request.method == 'POST':
+		print(request.form)
+		myPayload = request.form['chatInput']
+		print('received at flask server : ' + myPayload)
+
+		return process_msg(myPayload, rasa_nlu)
+
+		return 'Got it!'
+
+	return "Didn't get it!"
+
 
 app.secret_key = "jlg-ops"
 
@@ -35,7 +50,6 @@ if __name__ == '__main__':
 			reply = process_msg(x, rasa_nlu)
 			print(reply)
 		'''
-
 	
 	except KeyboardInterrupt:
 		r.snapshot_unparsed_messages("rasa-unparsed.txt")
