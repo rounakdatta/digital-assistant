@@ -98,6 +98,11 @@
         "entities": []
       },
       {
+        "text": "What's the time now?",
+        "intent": "time",
+        "entities": []
+      },
+      {
         "text": "Can you tell me the time?",
         "intent": "time",
         "entities": []
@@ -108,7 +113,22 @@
         "entities": []
       },
       {
+        "text": "What's the date today?",
+        "intent": "date",
+        "entities": []
+      },
+      {
+        "text": "What's today's date?",
+        "intent": "date",
+        "entities": []
+      },
+      {
         "text": "Can you tell me the date today?",
+        "intent": "date",
+        "entities": []
+      },
+      {
+        "text": "What day is today?",
         "intent": "date",
         "entities": []
       },
@@ -123,33 +143,88 @@
         "entities": []
       },
       {
-        "text": "hey",
+        "text": "What's up?",
         "intent": "greet",
         "entities": []
       },
       {
-        "text": "hey",
+        "text": "Whats up",
         "intent": "greet",
         "entities": []
       },
       {
-        "text": "hey",
+        "text": "Hey bot",
         "intent": "greet",
         "entities": []
       },
       {
-        "text": "howdy",
+        "text": "Howdy",
         "intent": "greet",
         "entities": []
       },
       {
-        "text": "hello",
+        "text": "Hello",
         "intent": "greet",
         "entities": []
       },
       {
         "text": "hi",
         "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hello there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hello Digital Assistant!",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "What's the price?",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "How much does it cost?",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "What is its price?",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "What is its cost?",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "How much do I have to pay?",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me its price?",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me what is the price?",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "How much rupees does it cost?",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "How much rupees?",
+        "intent": "price",
         "entities": []
       },
       {

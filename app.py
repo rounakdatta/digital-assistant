@@ -9,12 +9,14 @@ app = Flask(__name__)
 
 def process_msg(data, rasa_nlu):
 	print("message received" + data)
-	text_to_reply = rasa_nlu.find_reply(data)
+	text_to_reply = rasa_nlu.find_reply(data, session)
 	if text_to_reply:
 		return text_to_reply
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+	session['product'] = ''
+	session['product_price'] = ''
 	return render_template('index.html')
 
 
@@ -25,14 +27,18 @@ def process():
 		myPayload = request.form['chatInput']
 		print('received at flask server : ' + myPayload)
 
-		return process_msg(myPayload, rasa_nlu)
+		chatContext, chatReply = process_msg(myPayload, rasa_nlu)
 
-		return 'Got it!'
+		session['product'], session['product_price'] = ''
+		if chatContext[0] != '' : session['product'] = chatContext[0]
+		if chatContext[1] != '' : session['product_price'] = chatContext[1]
 
-	return "Didn't get it!"
+		return chatReply
+
+	return "Tricking me?"
 
 
-app.secret_key = "jlg-ops"
+app.secret_key = "digital-assistant"
 
 if __name__ == '__main__':
 
@@ -43,14 +49,7 @@ if __name__ == '__main__':
 		r.train()
 	
 		rasa_nlu = r
-	
-		'''
-		while(True):
-			x = input("Enter : ")
-			reply = process_msg(x, rasa_nlu)
-			print(reply)
-		'''
-	
+
 	except KeyboardInterrupt:
 		r.snapshot_unparsed_messages("rasa-unparsed.txt")
 		sys.exit(0)
