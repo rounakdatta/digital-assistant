@@ -40,12 +40,12 @@ class DataProvider(object):
 			avq = self.shopData.find({"tags": str(query)})
 
 			if(avq.count() != 0):
-				return [str(avq[0]['item']), str(avq[0]['sellingPrice'])], str(avq[0]['item']) + " found! " + str(avq[0]['availableQuantity']) + " units available." + form_sentence(avq)
+				return [str(avq[0]['item']), str(avq[0]['sellingPrice']), avq[0]['cod'], [avq[0]['maxDiscountPercent'], 0]], str(avq[0]['item']) + " found! " + str(avq[0]['availableQuantity']) + " units available." + form_sentence(avq)
 			else:
-				return [str(avq[0]['item']), str(avq[0]['sellingPrice'])], "Sorry, " + str(avq[0]['item']) + " isn't currently available."
+				return [str(avq[0]['item']), str(avq[0]['sellingPrice']), avq[0]['cod'], [avq[0]['maxDiscountPercent'], 0]], "Sorry, " + str(avq[0]['item']) + " isn't currently available."
 		except Exception as e:
 			print(e)
-			return ['', ''], "Oops, we don't yet have it available here!"
+			return ['', '', '', ''], "Oops, we don't yet have it available here!"
 
 		# needn't search through wolfram or wikipedia
 		# code below is redundant and will be removed later

@@ -886,6 +886,236 @@
             "entity": "query"
           }
         ]
+      },
+      {
+        "text": "Is Cash on Delivery available?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "Is COD available?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "Does this product have Cash On Delivery?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "Does this product have COD?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "Can I pay through cash?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "Can I pay through Cash On Delivery?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "Can I pay through COD?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "What if I pay via Cash On Delivery?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "What if I pay through COD?",
+        "intent": "cod",
+        "entities": []
+      },
+      {
+        "text": "Do you have any discounts available?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Do you have any discount on this product?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Do you have any discount?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Any discount available?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Any offers or discount available?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Do you have any offers?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Any current offers?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Can price be reduced for this product?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Can you lower the price?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Do you have discount on price?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Do you offer discounted price?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Any price negotiation possible?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Is discount possible?",
+        "intent": "discount",
+        "entities": []
+      },
+      {
+        "text": "Can you place an order for me?",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "Can you place an order?",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "Can you order the item?",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "Place an order",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "Place the order",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "Order this item",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "I'll buy this item",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "Buy this product",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "Take me to payment page",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "Payment for the product",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "I want to order this item",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "I want to place an order",
+        "intent": "order",
+        "entities": []
+      },
+      {
+        "text": "I want to buy 2 items",
+        "intent": "orderq",
+        "entities": [
+          {
+            "start": 14,
+            "end": 15,
+            "value": "2",
+            "entity": "qty"
+          }
+        ]
+      },
+      {
+        "text": "Place order for 10 items",
+        "intent": "orderq",
+        "entities": [
+          {
+            "start": 16,
+            "end": 18,
+            "value": "10",
+            "entity": "qty"
+          }
+        ]
+      },
+      {
+        "text": "Buy 7 products",
+        "intent": "orderq",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "7",
+            "entity": "qty"
+          }
+        ]
+      },
+      {
+        "text": "Order 2 items",
+        "intent": "orderq",
+        "entities": [
+          {
+            "start": 6,
+            "end": 7,
+            "value": "2",
+            "entity": "qty"
+          }
+        ]
+      },
+      {
+        "text": "I will buy 20 items",
+        "intent": "orderq",
+        "entities": [
+          {
+            "start": 11,
+            "end": 13,
+            "value": "20",
+            "entity": "qty"
+          }
+        ]
       }
     ]
   }

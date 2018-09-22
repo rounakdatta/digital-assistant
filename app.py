@@ -17,6 +17,10 @@ def process_msg(data, rasa_nlu):
 def index():
 	session['product'] = ''
 	session['product_price'] = ''
+	session['product_cod'] = ''
+	session['product_discount'] = ''
+	session['myDiscount'] = 0
+
 	return render_template('index.html')
 
 
@@ -29,9 +33,20 @@ def process():
 
 		chatContext, chatReply = process_msg(myPayload, rasa_nlu)
 
-		session['product'], session['product_price'] = ''
+		if chatContext[0] != session['product'] :
+			session['myDiscount'] = 0
+
+		session['product'] = ''
+		session['product_price'] = ''
+		session['product_cod'] = ''
+		session['product_discount'] = ''
+		
 		if chatContext[0] != '' : session['product'] = chatContext[0]
 		if chatContext[1] != '' : session['product_price'] = chatContext[1]
+		if chatContext[2] != '' : session['product_cod'] = chatContext[2]
+		if chatContext[3][0] != '' : session['product_discount'] = chatContext[3][0]
+
+		if session['myDiscount'] == 0 : session['myDiscount'] = chatContext[3][1]
 
 		return chatReply
 
