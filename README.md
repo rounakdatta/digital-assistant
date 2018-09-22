@@ -10,7 +10,7 @@
 
 Head over to [localhost:5000](http://localhost:5000)
 
-![Demo](https://raw.githubusercontent.com/rounakdatta/digital-assistant/master/media/v1.png)
+![Demo](https://i.imgur.com/ykkW85s.png)
 
 ### System Design
 
